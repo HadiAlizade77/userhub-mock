@@ -6,10 +6,6 @@ const fs = require('fs');
 let responses = JSON.parse(fs.readFileSync('responsesMock.json'));
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
-app.get('/auth', (req, res) => {
 
   console.log('Hi :) I sent a response to your server')
   let request_code = req.query.request_code ;
@@ -21,7 +17,7 @@ app.get('/auth', (req, res) => {
     res.redirect('http://127.0.0.1:8000');
   console.log(response)
   }).catch((err)=>{
-    res.redirect('http://127.0.0.1:8000');
+    res.send('sorry but youre not a valid user :D');
     console.log(err)
   })
 })
