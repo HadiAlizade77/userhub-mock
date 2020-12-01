@@ -18,7 +18,9 @@ app.get('/', (req, res) => {
   console.log(response)
   }).catch((err)=>{
     res.send('sorry but youre not a valid user :D');
-    console.log(err)
+    console.log('message:' + err.response.data.message)
+    console.log('file:' + err.response.data.file)
+    console.log('line:' + err.response.data.line)
   })
 })
 
