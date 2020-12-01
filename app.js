@@ -1,3 +1,8 @@
+//CONFIG
+const dynamicApi = 'http://127.0.0.1:8000/api/dynamic'
+const toolURL = 'http://127.0.0.1:8000/'
+
+//
 const axios = require('axios')
 const express = require('express')
 const app = express()
@@ -13,9 +18,9 @@ app.get('/', (req, res) => {
   let request = responses.auth[getRandomInt(3)]
   request.request_code = request_code
 
-  axios.post('http://127.0.0.1:8000/api/dynamic',request).then((response)=>{
-    res.redirect('http://127.0.0.1:8000');
-  console.log(response)
+  axios.post(dynamicApi,request).then((response)=>{
+    res.redirect(toolURL);
+    console.log(response.data)
   }).catch((err)=>{
     res.send('sorry but youre not a valid user :D');
     console.log('message:' + err.response.data.message)
@@ -23,8 +28,6 @@ app.get('/', (req, res) => {
     console.log('line:' + err.response.data.line)
   })
 })
-
-
 
 app.listen(port, () => {
   console.log(`UserHub mock listening at http://localhost:${port}`)
