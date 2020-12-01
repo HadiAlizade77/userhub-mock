@@ -1,1 +1,1 @@
-userhub
+npm install && node app.js
