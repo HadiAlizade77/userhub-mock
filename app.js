@@ -1,5 +1,5 @@
 //CONFIG
-const dynamicApi = 'http://127.0.0.1:8000/api/dynamic'
+const dynamicApi = 'http://127.0.0.1:8000/api/planning_dynamic_endpoint'
 const toolURL = 'http://127.0.0.1:8000/'
 
 //
