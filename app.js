@@ -17,16 +17,15 @@ app.get('/', (req, res) => {
   let payload_code = req.query.payload_code;
   let request = responses.auth[getRandomInt(3)]
   request.request_code = request_code
-setTimeout(axios.post(dynamicApi,request).then((response)=>{
-  res.redirect(toolURL);
-  console.log(response.data)
-}).catch((err)=>{
-  res.send('sorry but youre not a valid user :D');
-  console.log('message:' + err.response.data.message)
-  console.log('file:' + err.response.data.file)
-  console.log('line:' + err.response.data.line)
-}),1500)
-
+  axios.post(dynamicApi,request).then((response)=>{
+    res.redirect(toolURL);
+    console.log(response.data)
+  }).catch((err)=>{
+    res.send('sorry but youre not a valid user :D');
+    console.log('message:' + err.response.data.message)
+    console.log('file:' + err.response.data.file)
+    console.log('line:' + err.response.data.line)
+  })
 })
 
 app.listen(port, () => {
