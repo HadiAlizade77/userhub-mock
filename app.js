@@ -17,15 +17,21 @@ app.get('/', (req, res) => {
   let payload_code = req.query.payload_code;
   let request = responses.auth[getRandomInt(3)]
   request.request_code = request_code
+  console.log(request)
+
   axios.post(dynamicApi,request).then((response)=>{
-    res.redirect(toolURL);
+    res.redirect(toolURL)
     console.log(response.data)
   }).catch((err)=>{
-    res.send('sorry but youre not a valid user :D');
-    console.log('message:' + err.response.data.message)
-    console.log('file:' + err.response.data.file)
-    console.log('line:' + err.response.data.line)
-    console.log(err)
+    res.send('sorry but youre not a valid user :D')
+    if(typeof err.response !== 'undefined'){
+      console.log('message:' + err.response.data.message)
+      console.log('file:' + err.response.data.file)
+      console.log('line:' + err.response.data.line)
+    }
+    else {
+      console.log('\x1b[31m', 'BUT your server didnt send any response')  //cyan
+    }
   })
 })
 
