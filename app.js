@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
     console.log('message:' + err.response.data.message)
     console.log('file:' + err.response.data.file)
     console.log('line:' + err.response.data.line)
+    console.log(err)
   })
 })
 
