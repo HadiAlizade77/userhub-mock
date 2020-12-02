@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     console.log('Hi :) I sent this response to your server')
     console.log(request)
     axios.post(dynamicApi,request).then((response)=>{
-      res.redirect(toolURL)
+      res.redirect(toolURL+'/login/'+request.payload_code)
       console.log(response.data)
     }).catch((err)=>{
       res.send('youre server didnt respond with 200')
