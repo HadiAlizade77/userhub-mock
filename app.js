@@ -1,5 +1,5 @@
 //CONFIG
-const dynamicApi = 'http://127.0.0.1:8000/api/planning_dynamic_endpoint'
+const dynamicApi = 'http://127.0.0.1:8000/api/auth/planning_dynamic_endpoint'
 const toolURL = 'http://127.0.0.1:8000/'
 //
 const axios = require('axios')
@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
     console.log('Hi :) I sent this response to your server')
     console.log(request)
     axios.post(dynamicApi,request).then((response)=>{
-      res.redirect(toolURL+'/login/'+request.payload_code)
+      res.redirect(toolURL+'login?payload_code='+request.payload_code)
       console.log(response.data)
     }).catch((err)=>{
       res.send('youre server didnt respond with 200')
