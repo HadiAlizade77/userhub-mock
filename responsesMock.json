@@ -15,9 +15,24 @@
                 "name": "Heineken",
                 "code": "Heineken"
             },
+            "brands": [
+                {
+                    "name": "global",
+                    "code": "global",
+                    "distribution": "",
+                    "category": {
+                        "name": "Heineken"
+                    }
+                }
+            ],
+            "media_types": [
+                {
+                    "name": "global"
+                }
+            ],
             "first_name": "Hadi",
             "last_name": "Alizadi",
-            "email": "d1.zandi@atlann.co",
+            "email": "zaagros@atlann.coo",
             "request_code": "123123123123",
             "payload_code": "cvbqKDnmRKMspLfmwWkR"
         }
