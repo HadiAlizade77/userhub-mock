@@ -55,13 +55,47 @@
         ],
         "media_types": [
           {
-            "name": "all"
+            "name": "Digital"
+          },
+          {
+            "name": "Radio"
+          },
+          {
+            "name": "TV"
+          },
+          {
+            "name": "OOH"
+          },
+          {
+            "name": "Cinema"
+          },
+          {
+            "name": "Print"
+          },
+          {
+            "name": "Other"
           }
         ],
         "hierarchy": [
           {
-            "code": "all",
-            "name": "all"
+            "code": "AB",
+            "name": "Annual Budget"
+          },
+          {
+            "code": "BA",
+            "name": "Budget Allocation"
+          },
+          {
+            "code": "SP",
+            "name": "Strategic Planning"
+          },
+          {
+            "code": "CP",
+            "name": "Campaign Planning"
+          },
+          {
+            "code": "MP",
+            "name": "Media Planning"
           }
         ],
         "role": "am-approver"

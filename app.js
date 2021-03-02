@@ -1,6 +1,6 @@
 //CONFIG
-const dynamicApi = 'http://127.0.0.1:8000/api/auth/planning_dynamic_endpoint'
-const toolURL = 'http://127.0.0.1:8000/'
+const dynamicApi = 'http://www.hk.loc/api/auth/planning_dynamic_endpoint'
+const toolURL = 'http://www.hk.loc/'
 //
 const axios = require('axios')
 const express = require('express')
