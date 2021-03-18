@@ -63,9 +63,12 @@
             "code": "all",
             "name": "all"
           }
-        ],
-        "role": "am-approver"
+        ]
       },
+      "role": [
+        "super-admin",
+        "am-approver"
+      ],
       "first_name": "Hadi",
       "last_name": "Alizadi",
       "email": "zaagros@atlann.coo",
