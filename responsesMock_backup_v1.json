@@ -1,0 +1,79 @@
+{
+  "auth": [
+    {
+      "action": "auth",
+      "user_id": 1,
+      "opcos": [
+        {
+          "id": 1,
+          "name": "global",
+          "code": "global"
+        }
+      ],
+      "agency": {
+        "id": 1,
+        "name": "Heineken",
+        "code": "Heineken"
+      },
+      "brands": [
+        {
+          "name": "all",
+          "code": "all",
+          "distribution": "",
+          "category": {
+            "name": "Heineken"
+          }
+        }
+      ],
+      "media_types": [
+        {
+          "name": "all"
+        }
+      ],
+      "approval_matrix": {
+        "opcos": [
+          {
+            "id": 1,
+            "name": "global",
+            "code": "global"
+          }
+        ],
+        "agency": {
+          "id": 1,
+          "name": "Heineken",
+          "code": "Heineken"
+        },
+        "brands": [
+          {
+            "name": "all",
+            "code": "all",
+            "distribution": "",
+            "category": {
+              "name": "Heineken"
+            }
+          }
+        ],
+        "media_types": [
+          {
+            "name": "all"
+          }
+        ],
+        "hierarchy": [
+          {
+            "code": "all",
+            "name": "all"
+          }
+        ]
+      },
+      "role": [
+        "super-admin",
+        "am-approver"
+      ],
+      "first_name": "Hadi",
+      "last_name": "Alizadi",
+      "email": "zaagros@atlann.coo",
+      "request_code": "123123123123",
+      "payload_code": "cvbqKDnmRKMspLfmwWkR"
+    }
+  ]
+}

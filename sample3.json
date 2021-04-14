@@ -17,9 +17,19 @@
   },
   "brands": [
     {
-      "name": "all",
-      "code": "all",
-      "distribution": ""
+      "id": 3,
+      "name": "Schladminger",
+      "code": "B0130"
+    },
+    {
+      "id": 2,
+      "name": "Erdinger",
+      "code": "B0204"
+    },
+    {
+      "id": 5,
+      "name": "Pura Piraña",
+      "code": "B4894"
     }
   ],
   "teams": [
@@ -50,8 +60,8 @@
   "user_matrix": {
     "roles": [
       {
-        "name": "ab-approver",
-        "code": "ab-approver",
+        "name": "Cil",
+        "code": "cil",
         "opcos": [
           {
             "id": 3,
@@ -61,9 +71,19 @@
         ],
         "brands": [
           {
-            "name": "all",
-            "code": "all",
-            "distribution": ""
+            "id": 3,
+            "name": "Schladminger",
+            "code": "B0130"
+          },
+          {
+            "id": 2,
+            "name": "Erdinger",
+            "code": "B0204"
+          },
+          {
+            "id": 5,
+            "name": "Pura Piraña",
+            "code": "B4894"
           }
         ],
         "teams": [
@@ -92,8 +112,8 @@
         }
       },
       {
-        "name": "ba-approver",
-        "code": "ba-approver",
+        "name": "Data Viewer",
+        "code": "dataViewer",
         "opcos": [
           {
             "id": 3,

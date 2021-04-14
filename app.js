@@ -11,7 +11,8 @@ let responses = JSON.parse(fs.readFileSync('responsesMock.json'));
 
 app.get('/', (req, res) => {
   let request_code = req.query.request_code || null;
-  let request = responses.auth[0]
+  // let request = responses.auth[0]
+  let request = responses
   request.request_code = request_code
   if (request_code !== null){
     console.log('Hi :) I sent this response to your server')
