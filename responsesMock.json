@@ -50,6 +50,48 @@
   "user_matrix": {
     "roles": [
       {
+        "name": "super-admin",
+        "code": "super-admin",
+        "opcos": [
+          {
+            "id": 3,
+            "name": "global",
+            "code": "global"
+          }
+        ],
+        "brands": [
+          {
+            "name": "all",
+            "code": "all",
+            "distribution": ""
+          }
+        ],
+        "teams": [
+          {
+            "id": 2,
+            "name": "Pursuit",
+            "code": "pursuit"
+          }
+        ],
+        "mediaTypes": [
+          {
+            "id": 2,
+            "name": "Digital",
+            "code": "digital"
+          },
+          {
+            "id": 4,
+            "name": "TV",
+            "code": "tv"
+          }
+        ],
+        "agency": {
+          "name": "Heineken",
+          "code": "Heineken",
+          "id": 22
+        }
+      },
+      {
         "name": "ab-approver",
         "code": "ab-approver",
         "opcos": [
