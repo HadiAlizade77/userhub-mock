@@ -1,148 +1,223 @@
 {
-  "subject": "user",
-  "action": "auth",
-  "user_id": 2040,
-  "cil": 0,
+  "cil":0,
+  "action":"auth",
+  "email":"obaid2@atlann.co",
+  "subject":"user",
+  "user_id":1147,
+  "last_name":"Samadian",
+  "first_name":"Obaid",
+  "azure_email":"obaid2_atlann.co#EXT#@heiway.onmicrosoft.com",
   "opcos": [
     {
-      "id": 3,
+      "id": 1,
       "name": "global",
       "code": "global"
     }
   ],
-  "agency": {
-    "name": "Heineken",
+  "agencies": [
+    {
+    "id": 22,
     "code": "Heineken",
-    "id": 22
-  },
+    "name": "Heineken"
+    },
+    {
+      "id": 23,
+      "code": "Redstar",
+      "name": "Redstar"
+    }
+  ],
   "brands": [
     {
       "name": "all",
       "code": "all",
-      "distribution": ""
-    }
-  ],
-  "teams": [
-    {
-      "id": 2,
-      "name": "Pursuit",
-      "code": "pursuit"
+      "distribution": "",
+      "category": {
+        "name": "Heineken"
+      }
     }
   ],
   "media_types": [
     {
-      "id": 2,
-      "name": "Digital",
-      "code": "digital"
-    },
-    {
-      "id": 4,
-      "name": "TV",
-      "code": "tv"
+      "name": "all"
     }
   ],
-  "first_name": "Nader",
-  "last_name": "Test",
-  "email": "nader@atlann.co",
-  "azure_email": "nader_atlann.co#EXT#@heiway.onmicrosoft.com",
-  "request_code": "606f1c433a1483.04186564",
-  "payload_code": "606f1c58128c83.98759954",
-  "user_matrix": {
-    "roles": [
+  "hierarchy": [
+    {
+      "code": "all",
+      "name": "all"
+    }
+  ],
+  "approval_matrix": {
+    "opcos": [
       {
-        "name": "ab-approver",
-        "code": "ab-approver",
-        "opcos": [
-          {
-            "id": 3,
-            "name": "global",
-            "code": "global"
-          }
-        ],
-        "brands": [
-          {
-            "name": "all",
-            "code": "all",
-            "distribution": ""
-          }
-        ],
-        "teams": [
-          {
-            "id": 2,
-            "name": "Pursuit",
-            "code": "pursuit"
-          }
-        ],
-        "mediaTypes": [
-          {
-            "id": 2,
-            "name": "Digital",
-            "code": "digital"
-          },
-          {
-            "id": 4,
-            "name": "TV",
-            "code": "tv"
-          }
-        ],
-        "agency": {
-          "name": "Heineken",
-          "code": "Heineken",
-          "id": 22
-        }
-      },
+        "id": 1,
+        "name": "global",
+        "code": "global"
+      }
+    ],
+    "agency": {
+      "id": 1,
+      "name": "Heineken",
+      "code": "Heineken"
+    },
+    "brands": [
       {
-        "name": "ba-approver",
-        "code": "ba-approver",
-        "opcos": [
-          {
-            "id": 3,
-            "name": "global",
-            "code": "global"
-          }
-        ],
-        "brands": [
-          {
-            "id": 3,
-            "name": "Schladminger",
-            "code": "B0130"
-          },
-          {
-            "id": 2,
-            "name": "Erdinger",
-            "code": "B0204"
-          },
-          {
-            "id": 5,
-            "name": "Pura Piraña",
-            "code": "B4894"
-          }
-        ],
-        "teams": [
-          {
-            "id": 2,
-            "name": "Pursuit",
-            "code": "pursuit"
-          }
-        ],
-        "mediaTypes": [
-          {
-            "id": 2,
-            "name": "Digital",
-            "code": "digital"
-          },
-          {
-            "id": 4,
-            "name": "TV",
-            "code": "tv"
-          }
-        ],
-        "agency": {
-          "name": "Heineken",
-          "code": "Heineken",
-          "id": 22
+        "name": "all",
+        "code": "all",
+        "distribution": "",
+        "category": {
+          "name": "Heineken"
         }
       }
+    ],
+    "media_types": [
+      {
+        "name": "all"
+      }
+    ],
+    "hierarchy": [
+      {
+        "code": "all",
+        "name": "all"
+      }
     ]
-  }
+  },
+  "user_matrix":{
+    "roles":[
+      {
+        "code":"super-admin",
+        "name":"Super Admin",
+        "opcos":[
+          {
+            "id":3,
+            "code":"global",
+            "name":"global"
+          }
+        ],
+        "teams":[
+        ],
+        "agency":{
+          "id":22,
+          "code":"Heineken",
+          "name":"Heineken"
+        },
+        "brands":[
+        ],
+        "mediaTypes":[
+        ]
+      },
+      {
+        "code":"ab-approver",
+        "name":"Annual Budget Approver",
+        "opcos":[
+          {
+            "id":3,
+            "code":"global",
+            "name":"global"
+          }
+        ],
+        "teams":[
+        ],
+        "agency":{
+          "id":22,
+          "code":"Heineken",
+          "name":"Heineken"
+        },
+        "brands":[
+        ],
+        "mediaTypes":[
+        ]
+      },
+      {
+        "code":"ba-approver",
+        "name":"Budget Allocation Approver",
+        "opcos":[
+          {
+            "id":3,
+            "code":"global",
+            "name":"global"
+          }
+        ],
+        "teams":[
+        ],
+        "agency":{
+          "id":22,
+          "code":"Heineken",
+          "name":"Heineken"
+        },
+        "brands":[
+        ],
+        "mediaTypes":[
+        ]
+      },
+      {
+        "code":"sp-approver",
+        "name":"Strategic Plan Approver",
+        "opcos":[
+          {
+            "id":3,
+            "code":"global",
+            "name":"global"
+          }
+        ],
+        "teams":[
+        ],
+        "agency":{
+          "id":22,
+          "code":"Heineken",
+          "name":"Heineken"
+        },
+        "brands":[
+        ],
+        "mediaTypes":[
+        ]
+      },
+      {
+        "code":"cp-approver",
+        "name":"Campgain Plan Approver",
+        "opcos":[
+          {
+            "id":3,
+            "code":"global",
+            "name":"global"
+          }
+        ],
+        "teams":[
+        ],
+        "agency":{
+          "id":22,
+          "code":"Heineken",
+          "name":"Heineken"
+        },
+        "brands":[
+        ],
+        "mediaTypes":[
+        ]
+      },
+      {
+        "code":"mp-approver",
+        "name":"Media Plan Approver",
+        "opcos":[
+          {
+            "id":3,
+            "code":"global",
+            "name":"global"
+          }
+        ],
+        "teams":[
+        ],
+        "agency":{
+          "id":22,
+          "code":"Heineken",
+          "name":"Heineken"
+        },
+        "brands":[
+        ],
+        "mediaTypes":[
+        ]
+      }
+    ]
+  },
+  "payload_code":"607d35cecef4e7.99669958",
+  "request_code":"WkeA3prcB4TrkUTou3iJ"
 }
