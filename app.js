@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
       res.redirect(toolURL+'login?payload_code='+request.payload_code)
       console.log(response.data)
     }).catch((err)=>{
+      console.log(err);
       res.send('youre server didnt respond with 200')
       console.log('youre server didnt respond with 200')
       if(typeof err.response !== 'undefined'){
